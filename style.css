@@ -1,0 +1,334 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&display=swap');
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+html{
+    font-family : Montserrat, sans-serif;
+    scroll-behavior: smooth;
+}
+/* HEADER */
+#header{
+    width : 100%;
+    
+}
+.header{
+    position : fixed;
+    left : 0;
+    top : 0;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    background-color : rgba(31,30,30,0.8);
+    width : 100%;
+    z-index : 100;
+}
+.header .logo{
+    margin : 10px 20px;
+    width : fit-content;
+    display : inline-block;
+}
+.header .logo img{
+    height : 40px;
+    width : 50px;
+    filter : invert(100%);
+    cursor : pointer;
+    transition : 0.3s ease;
+}
+.header .logo img:hover{
+    filter : invert(50%);
+}
+.header .navbar{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    margin : 10px 20px;
+    padding : 10px;
+}
+.header .navbar ul{
+    display : inline-block;
+    list-style : none;
+}
+.header .navbar ul li{
+    display : inline-block;
+    margin-right : 15px;
+    padding : 5px;
+}
+.header .navbar ul li a{
+    text-decoration : none;
+    color : white;
+    transition : 0.3s ease;
+}
+.header .navbar ul li a:hover{
+    color : #95bdff;
+}
+
+/* HOME */
+.container{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    min-height : 100vh;
+}
+#main{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./images/profile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container h1{
+    color : white;
+    font-size : 3rem;
+    display : block;
+    width : fit-content;
+}
+.container h1:nth-child(3){
+    color : #95bdff;
+}
+.hero{
+    justify-content : flex-start;
+    max-width : 1000px;
+    margin : 0px auto;
+    padding : 10px;
+}
+.hero a{
+    display : inline-block;
+    text-decoration : none;
+    border : 3px solid #95bdff;
+    border-radius : 10px;
+    padding : 10px 20px;
+    margin : 20px;
+    color : #95bdff;
+    transition : 0.3s ease;
+}
+.hero a:hover{
+    color : white;
+    background-color: #95bdff;
+    font-weight : 1000;
+}
+/* ABOUT ME */
+#aboutme h1{
+    display : block;
+    color : black;
+    width : fit-content;
+    margin : 20px auto;
+    margin-top : 100px;
+    margin-bottom : 5px;
+}
+#aboutme h1 span{
+    color : #95bdff;
+}
+.about{
+   
+    flex-direction : column;
+    justify-content: flex-start;
+}
+.about .photo1 img{
+    height : 250px;
+    width : 200px;
+}
+.about .photo1{
+    height : 270px;
+    width : 200px;
+    position : relative;
+    border : 10px solid white;
+}
+.about .photo1::after{
+    content : '';
+    position : absolute;
+    left : -33px;
+    top : 19px;
+    height : 98%;
+    width : 98%;
+    border : 7px solid yellow;
+    z-index : -1;
+}
+.about .content{
+    max-width : 500px;
+    margin : 30px;
+    padding : 10px;
+    
+}
+.about .content h3{
+    display : block;
+    width : fit-content;
+
+}
+.about .content p{
+    line-height : 1.5;
+}
+/* CONTACT ME */
+#contactme{
+    width : 100%;
+}
+#contactme h1{
+    display : block;
+    width : fit-content;
+    margin : 100px auto;
+    font-size : 3rem;
+}
+#contactme h1 span{
+    color : #95bdff;
+}
+.contact{
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : center;
+    align-items : center;
+    gap : 40px;
+}
+.contact div{
+    width : 250px;
+    height : 200px;
+    margin : 30px;
+    padding : 10px;
+    box-shadow : 0px 0px 20px 0px #0000002c;
+    transition : .3s ease box-shadow;
+    cursor : pointer;
+}
+.contact div:hover{
+    box-shadow : 0px 0px 5px 0px #0000002c;
+}
+.contact div img{
+    width : 50px;
+    height : 50px;
+    position : relative;
+    left : 40%;
+}
+.contact div h3{
+    text-align : center;
+    line-height : 1.5;
+    padding : 30px;
+}
+.contact div p{
+    padding : 10px;
+    text-align : center;
+}
+/* FEEDBACK */
+#feedback{
+    width : 100%;
+    min-height : 100vh;
+    margin-bottom : 30px;
+}
+#feedback h1{
+    display : block;
+    width : fit-content;
+    margin : 100px auto;
+    font-size : 3rem;
+}
+#feedback h1 span{
+    color : #95bdff;
+}
+.feedback{
+    background-image : linear-gradient(60deg, #29323c 0%, #485563 100%);
+    margin : auto;
+    width : fit-content;
+    border-radius : 10px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    padding : 20px;
+}
+.feedback h3{
+    text-align : center;
+    color : white;
+}
+.feedback input{
+    margin : 15px;
+    padding : 10px;
+    width : 405px;
+    border-radius : 10px;
+}
+.feedback .textarea textarea{
+    margin : 15px;
+    padding : 10px;
+    border-radius : 10px;
+}
+.feedback .cta{
+    width : fit-content;
+    display : inline-block;
+}
+.feedback .btn:hover{
+    background-image : linear-gradient(60deg, #29323c 0%, #485563 100%);
+    
+    color : white;
+
+}
+.feedback .btn{
+    width : 100px;
+    cursor : pointer;
+}
+/* Footer */
+#footer{
+    height : 200px;
+    background-image : linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color : white;
+    
+}
+.footer{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    gap : 40px;
+}
+#footer h3{
+    text-align : center;
+    margin-top : 20px;
+}
+#footer p{
+    text-align : center;
+}
+#footer a{
+    color : white;
+    text-decoration : none;
+    margin : 20px;
+    padding : 10px;
+    transition : 0.3s ease;
+    border-radius : 10px;
+}
+#footer a:hover{
+    color : #95bdff;
+    background-color : white;
+    font-weight : 1000;
+}
+
+/* Media query */
+@media (max-width:560px){
+    #aboutme h1{
+        font-size : 2rem;
+    }
+    #contactme h1{
+        font-size : 2rem;
+    }
+    #feedback h1{
+        font-size : 2rem;
+    }
+    .header .logo{
+        margin : 3px;
+    }
+    .header .logo img{
+        height : 30px;
+        width : 30px;
+    }
+    .header .navbar ul li{
+        margin : 0px;
+    }
+    .header .navbar li a{
+        font-size : 12px;
+        margin-right : 0px;
+    }
+    .container h1{
+        font-size : 2.5rem;
+    }
+    .feedback input{
+        width : 300px;
+    }
+    .feedback textarea{
+        width : 300px;
+    }
+}
